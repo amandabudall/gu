@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minha Loja de Skate</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <a href="index.html"></a>
+    <link rel="stylesheet" href="carrinho.css">
+  <style>
+    
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .item input {
+      width: 30px;
+    }
+    .btn {
+      background-color: #000000;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Minha Loja de Skate</h1>
+  <div class="item">
+    <span>Shape de Skate</span>
+    <input type="number" min="0" value="0" id="shapeQuantity">
+    <button class="btn" onclick="addToCart('Shape de Skate', 'shapeQuantity')">Adicionar ao Carrinho</button>
+  </div>
+  
+  <div class="item">
+    <span>Rodas de Skate</span>
+    <input type="number" min="0" value="0" id="rodasQuantity">
+    <button class="btn" onclick="addToCart('Rodas de Skate', 'rodasQuantity')">Adicionar ao Carrinho</button>
+  </div>
+  
+  <div class="item">
+    <span>Truck de Skate</span>
+    <input type="number" min="0" value="0" id="truckQuantity">
+    <button class="btn" onclick="addToCart('Truck de Skate', 'truckQuantity')">Adicionar ao Carrinho</button>
+  </div>
+  
+  <h2>Carrinho de Compras</h2>
+  <ul id="cartItems">
+  </ul>
+  
+  <script>
+    function addToCart(itemName, quantityId) {
+      var quantity = parseInt(document.getElementById(quantityId).value);
+      if (quantity > 0) {
+        var cartItems = document.getElementById("cartItems");
+        var li = document.createElement("li");
+        li.textContent = itemName + " - " + quantity;
+        cartItems.appendChild(li);
+      }
+    }
+  </script>
+</body>
+</html>
