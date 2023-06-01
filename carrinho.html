@@ -1,64 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Minha Loja de Skate</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <a href="index.html"></a>
-    <link rel="stylesheet" href="carrinho.css">
-  <style>
-    
-    .item {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 10px;
-    }
-    .item input {
-      width: 30px;
-    }
-    .btn {
-      background-color: #000000;
-      color: white;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="carrinho.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
+
 <body>
-  <h1>Minha Loja de Skate</h1>
-  <div class="item">
-    <span>Shape de Skate</span>
-    <input type="number" min="0" value="0" id="shapeQuantity">
-    <button class="btn" onclick="addToCart('Shape de Skate', 'shapeQuantity')">Adicionar ao Carrinho</button>
-  </div>
-  
-  <div class="item">
-    <span>Rodas de Skate</span>
-    <input type="number" min="0" value="0" id="rodasQuantity">
-    <button class="btn" onclick="addToCart('Rodas de Skate', 'rodasQuantity')">Adicionar ao Carrinho</button>
-  </div>
-  
-  <div class="item">
-    <span>Truck de Skate</span>
-    <input type="number" min="0" value="0" id="truckQuantity">
-    <button class="btn" onclick="addToCart('Truck de Skate', 'truckQuantity')">Adicionar ao Carrinho</button>
-  </div>
-  
-  <h2>Carrinho de Compras</h2>
-  <ul id="cartItems">
-  </ul>
-  
-  <script>
-    function addToCart(itemName, quantityId) {
-      var quantity = parseInt(document.getElementById(quantityId).value);
-      if (quantity > 0) {
-        var cartItems = document.getElementById("cartItems");
-        var li = document.createElement("li");
-        li.textContent = itemName + " - " + quantity;
-        cartItems.appendChild(li);
-      }
-    }
-  </script>
+  <header>
+    <span>Carrinho de compras do <b>Elf Store</b></span>
+  </header>
+  <main>
+    <div class="page-title">Seu Carrinho</div>
+    <div class="content">
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Quantidade</th>
+              <th>Total</th>
+              <th>-</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="product">
+                  <img src="tenis.png" width="50%" />
+                  <div class="info">
+                    <div class="name">Tênis Tesla Coil Black White UV Purple</div>
+                    <div class="category">Tênis</div>
+                  </div>
+                </div>
+              </td>
+              <td>R$ 299,99</td>
+              <td>
+                <div class="qty">
+                  <button><i class="bx bx-minus"></i></button>
+                  <span>1</span>
+                  <button><i class="bx bx-plus"></i></button>
+                </div>
+              </td>
+              <td>R$ 299,99</td>
+              <td>
+                <button class="remove"><i class="bx bx-x"></i></button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="product">
+                  <img src="diamond2.png" width="50%" />
+                  <div class="info">
+                    <div class="name">Boné Diamond Brilliant Descontruido Aba Reta Preto</div>
+                    <div class="category">Acessórios/Bonés</div>
+                  </div>
+                </div>
+              </td>
+              <td>R$ 169,99</td>
+              <td>
+                <div class="qty">
+                  <button><i class="bx bx-minus"></i></button>
+                  <span>2</span>
+                  <button><i class="bx bx-plus"></i></button>
+                </div>
+              </td>
+              <td>R$ 339,98</td>
+              <td>
+                <button class="remove"><i class="bx bx-x"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <aside>
+        <div class="box">
+          <header>Resumo da compra</header>
+          <div class="info">
+            <div><span>Sub-total</span><span>R$ 639,97</span></div>
+            <div><span>Frete</span><span> Gratuito </span></div>
+            <div>
+              <form>
+                <label for="estado"> Selecione o estado: </label>
+                <select id="estado" name="estado" onchange="calcularFrete()">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </form>
+        
+            <div id="resultado"></div>
+        
+            <script>
+                function calcularFrete() {
+                    var estadoSelecionado = document.getElementById("estado").value;
+                    
+                    
+                    var resultado = document.getElementById("resultado");
+                    resultado.innerHTML = " O frete para o estado selecionado é R$ 10,00.";
+                }
+            </script>
+              <button>
+                Adicionar cupom de desconto
+                <i class="bx bx-right-arrow-alt"></i>
+              </button>
+            </div>
+          </div>
+          <footer>
+            <span>Total</span>
+            <span>R$ 639,97</span>
+          </footer>
+        </div>
+        <a href="final.html">
+        <button> Finalizar Compra <a href="final.html"></a></button>
+      </aside>
+    </div>
+  </main>
 </body>
+
 </html>

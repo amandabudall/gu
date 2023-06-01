@@ -27,7 +27,7 @@
 }
 
 .videohome{
-    padding-top: 200px;
+    padding-top: 120px;
     align-items: center;
     background-color: #fff;
     width: 100%;
@@ -56,24 +56,27 @@ header{
     padding-top: 400px;
 }
 
+a{
+    color: white;
+}
 
 .logo{
     font-weight: 500;
     font-size: 1rem;
 }
 
-.cabecalho-link{
+.cabeçalho-link{
     display: flex;
     gap: 3rem;
 }
 
-.cabecalho-link a{
+.cabeçalho-link a{
     color: #111;
     font-weight: 700;
     transition: 0.3s;
 }
 
-.cabecalho-link a:hover{
+.cabeçalho-link a:hover{
     color: #c8815f;
 }
 
@@ -240,7 +243,7 @@ section h1{
     gap: 5rem;
     justify-content: space-around;
     background-color: #111;
-    padding: 8rem;
+    padding: 4rem;
     margin-top: 5rem;
     display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -273,4 +276,9 @@ section h1{
     text-align: center;
     background-color: #555;
     color: #fff;
+    padding: 10px;
+}
+
+button{
+    color: white;
 }
