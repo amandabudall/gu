@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title> Elf Store </title>
 </head>
-<body>
-
+<body id="a">
+    <div class="putz" id="putz">
+        <div class="putzConteudo"></div>
+        <div class="xzinho" onclick="fecharPutz()"></div>
+    </div>
     <section class="videohome" >
         <video autoplay loop muted height="910px">
             <source src="Skates Traxart (1).mp4"  type="video/mp4"/>
@@ -31,16 +34,16 @@
                     <a href="index.html"> Inicio </a>
                 </li>
                 <li>
-                    <a href="produtos.html" target="_self"> Produtos </a>
+                    <a href="produtos/produtos.html" target="_self"> Produtos </a>
                 </li>
                 <li>
-                    <a href="novo.html">Novo</a>
+                    <a href="novo/novo.html">Novo</a>
                 </li>
                 <li>
-                    <a href="contato.html" target="_self"> Contato </a>
+                    <a href="contato/contato.html" target="_self"> Contato </a>
                 </li>
                 <li>
-                    <a href="local.html" target="_self"> Localização </a>
+                    <a href="local/local.html" target="_self"> Localização </a>
                 </li>
             </div>
             <div class="icon" onclick="window.location='carrinho.html';"><span><ion-icon name="bag-outline"></ion-icon></span>
@@ -52,10 +55,11 @@
        
     </div>
 
+   
     <section class="categoria">
         <h1> NOVOS PRODUTOS </h1>
         <div class="Container-card-1">
-            <div class="cards">
+            <div class="cards" onclick="putz()">
                 <img src="shape.jpg">
                 <h1> R$399 </h1>
             </div>
@@ -171,6 +175,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
     <script src="script.js"></script>
+    <script src="jquery-3.7.0.min.js"></script>
 </body>
 </html> 

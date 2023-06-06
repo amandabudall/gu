@@ -27,3 +27,17 @@ window.onscroll = () =>{
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }
+var a = document.getElementById("putz");
+function putz(){
+    var a = document.getElementById("putz");
+    a.style.display = 'flex';
+}
+
+function fecharPutz(){
+    var a = document.getElementById("putz");
+    a.style.display = 'none';
+}
+
+$('#ParentContainer').scroll(function() { 
+    $('#FixedDiv').animate({top:$(this).scrollTop()});
+});

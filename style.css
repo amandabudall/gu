@@ -35,6 +35,32 @@
     height: 100vh;
 }
 
+.putz{
+    display: none;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.putzConteudo{
+    background-color: rebeccapurple;
+    width: 50%;
+    height: 50%;
+}
+
+.xzinho{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    background-color: white;
+    width: 5%;
+    height: 1%;
+    display: flex;
+    
+}
+
 header{
     display: flex;
     justify-content: space-around;
