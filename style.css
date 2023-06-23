@@ -39,24 +39,26 @@
     display: none;
     position: fixed;
     z-index: 4;
-    width: 100%;
-    height: 100%;
+    width: 1000px;
+    height: 600px;
     align-items: center;
     justify-content: center;
+    top: 120px;
+    right: 300px;
 }
 .putzConteudo{
-    background-color: rebeccapurple;
-    width: 50%;
-    height: 50%;
+    background-color: rgb(235, 234, 236);
+    width: 70%;
+    height: 80%;
 }
 
 .xzinho{
     position: absolute;
-    left: 50%;
-    top: 35%;
-    background-color: white;
+    right: 18%;
+    top: 13%;
+    background-color: rgb(90, 90, 90);
     width: 5%;
-    height: 1%;
+    height: 7%;
     display: flex;
     
 }
