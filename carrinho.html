@@ -129,6 +129,13 @@
                     resultado.innerHTML = " O frete para o estado selecionado é R$ 10,00.";
                 }
             </script>
+            <script>
+                function removerItem(id) {
+                  var item = document.getElementById(id);
+                  item.parentNode.removeChild(item);
+                }
+              </script>
+              
               <button>
                 Adicionar cupom de desconto
                 <i class="bx bx-right-arrow-alt"></i>
@@ -139,6 +146,25 @@
             <span>Total</span>
             <span>R$ 639,97</span>
           </footer>
+          ...
+<tr id="item1">
+  ...
+  <td>
+    <button class="remove" onclick="removerItem('item1')">
+      <i class="bx bx-x"></i>
+    </button>
+  </td>
+</tr>
+<tr id="item2">
+  ...
+  <td>
+    <button class="remove" onclick="removerItem('item2')">
+      <i class="bx bx-x"></i>
+    </button>
+  </td>
+</tr>
+...
+
         </div>
         <a href="final.html">
         <button> Finalizar Compra <a href="final.html"></a></button>

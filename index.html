@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <title> Elf Store </title>
 </head>
-<body id="a">
-    <div class="putz" id="putz">
-        <div class="putzConteudo"></div>
-        <div class="xzinho" onclick="fecharPutz()"></div>
-    </div>
+   <body id="a">
+
+
+        <div class="putz" id="putz">
+                 <div class="putzConteudo">
+                 </div>
+             <div class="xzinho" onclick="fecharPutz()">
+                <img src="x.png"> 
+             </div>
+        </div>
+
+
+    </body>
     <section class="videohome" >
         <video autoplay loop muted height="910px">
             <source src="Skates Traxart (1).mp4"  type="video/mp4"/>
@@ -55,6 +63,7 @@
        
     </div>
 
+       
    
     <section class="categoria">
         <h1> NOVOS PRODUTOS </h1>
@@ -64,41 +73,47 @@
                 <h1> R$399 </h1>
             </div>
 
-            <div class="cards">
+
+            <div class="cards" onclick="putz()">
                 <img src="truck.jpg">
                 <h1> R$150 </h1>
             </div>
         </div>
 
         <div class="Container-card-1">
-            <div class="cards">
+            <div class="cards" onclick="putz()">
                 <img src="bones.jpg">
                 <h1> R$369 </h1>
             </div>
 
-            <div class="cards">
+            <div class="cards" onclick="putz()">
                 <img src="lixa.jpg">
                 <h1> R$100 </h1>
             </div>
         </div>
 
         <div class="Container-card-1">
-            <div class="cards">
+            <div class="cards" onclick="putz()">
                 <img src="rolamento.jpg">
                 <h1> R$200 </h1>
             </div>
 
-            <div class="cards">
+            <div class="cards" onclick="putz()">
                 <img src="parafuso.jpg">
                 <h1> R$30 </h1>
+
+                
             </div>
         </div>
     </section>
 
       <section>
+        <div class="putzConteudo">
+            aaa
+        </div>
         <h1> ESTOQUE NOVOS </h1>
         <div class="Container-roupas">
-            <div class="roupa">
+            <div class="roupa" onclick="putz()">
                  <img src="roupa1.jpg" alt="">
                 <p> Bombo Jaco  The North Face </p>
                 <h5>R$400</h5>
@@ -106,21 +121,21 @@
             </div>
 
 
-           <div class="roupa">
+           <div class="roupa" onclick="putz()">
             <img src="tren2.jpg" alt="">
            <p> Calça Moletom Panacotta Preta </p>
            <h5>R$188</h5>
            <span><ion-icon name="cart-outline"></ion-icon></span>
        </div>
 
-       <div class="roupa">
+       <div class="roupa" onclick="putz()">
         <img src="tren3.jpg" alt="">
        <p> Moletom Harmony Azul </p>
        <h5>R$90</h5>
        <ion-icon name="cart-outline"></ion-icon>
     </div>
 
-   <div class="roupa">
+   <div class="roupa" onclick="putz()">
      <img src="tren4.jpg" alt="">
     <p> Calça Moletom Panacotta Ciano </p>
     <h5>R$188</h5><ion-icon name="cart-outline"></ion-icon>
@@ -170,8 +185,6 @@
 
 
 
-
-    
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
