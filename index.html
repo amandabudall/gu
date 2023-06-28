@@ -8,37 +8,27 @@
     <title> Elf Store </title>
 </head>
    <body id="a">
-        <div class="carrinho" id="carrinho"></div>
 
-        <div class="putz" id="putz"> 
+
+        <div class="putz" id="putz">
                  <div class="putzConteudo">
-                    <div class="botao" onclick="mandarCarrinho('Skate',199)">a</div>
                  </div>
-             <div class="xzinho" onclick="fecharPutz('putz')">
+             <div class="xzinho" onclick="fecharPutz()">
                 <img src="x.png"> 
              </div>
         </div>
 
-        <div class="putz" id="putz">
-            <div class="putzConteudo">
-            </div>
-        <div class="xzinho" onclick="fecharPutz('putz2')">
-           <img src="x.png"> 
-          
-        </div>
-   </div>
-
 
     </body>
     <section class="videohome" >
-        <video autoplay loop muted height="854px" >
+        <video autoplay loop muted height="910px">
             <source src="Skates Traxart (1).mp4"  type="video/mp4"/>
         </video>
         <div class="Meio">
             <h1> NOVA LINHA </h1>
             <h1> MASCULINA </h1>
             <P> Novas cores, novos tamanhos e novas variedades </P>
-           <button> <a href="novo/novo.html"> Nova Coleção </a> </button>
+           <button> <a href="novo.html"> Nova Coleção </a> </button>
         </div>
     </section>
     
@@ -64,7 +54,7 @@
                     <a href="local/local.html" target="_self"> Localização </a>
                 </li>
             </div>
-            <div class="icon" onclick="carrinho()"><span><ion-icon name="bag-outline"></ion-icon></span>
+            <div class="icon" onclick="window.location='carrinho.html';"><span><ion-icon name="bag-outline"></ion-icon></span>
                 
             </div>
 
@@ -76,40 +66,19 @@
        
    
     <section class="categoria">
-      <div class="alamadre">
-        
-          <div class="linhazinha"> - </div>
-      </div>
-        <h1>  NOVOS PRODUTOS ⭐ </h1>
-<div class="guardatudo">
-    
+        <h1> NOVOS PRODUTOS </h1>
+        <div class="Container-card-1">
+            <div class="cards" onclick="putz()">
+                <img src="shape.jpg">
+                <h1> R$399 </h1>
+            </div>
 
 
-    <div class="Container-card-1">
-      
-             
-                <div class="cards" onclick="putz('putz')">
-                    <img src="shape.jpg">                        
-                            <h1>R$399</h1>                       
-                </div>
-             
-             
-                
-            <div class="cards" onclick="putz('putz')">
+            <div class="cards" onclick="putz()">
                 <img src="truck.jpg">
-                <div class="preco">
-                <h1>R150</h1>
-                </div>
+                <h1> R$150 </h1>
             </div>
         </div>
-                </div>  
-        </div>
-    </div>
-
-
-
-
-
 
         <div class="Container-card-1">
             <div class="cards" onclick="putz()">
@@ -123,11 +92,6 @@
             </div>
         </div>
 
-
-
-
-
-
         <div class="Container-card-1">
             <div class="cards" onclick="putz()">
                 <img src="rolamento.jpg">
@@ -136,16 +100,17 @@
 
             <div class="cards" onclick="putz()">
                 <img src="parafuso.jpg">
-                <h1> R$30 </h1>  
-            </div>
-         </div>
- 
+                <h1> R$30 </h1>
 
-</div>
+                
+            </div>
+        </div>
     </section>
 
       <section>
-        
+        <div class="putzConteudo">
+            aaa
+        </div>
         <h1> ESTOQUE NOVOS </h1>
         <div class="Container-roupas">
             <div class="roupa" onclick="putz()">

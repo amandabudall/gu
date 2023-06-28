@@ -14,6 +14,7 @@
     
 }
 .background{
+    
    
     background-position: absolute;
     width: 100%;
@@ -31,83 +32,31 @@
     background-color: #fff;
     width: 100%;
     max-width: 100%;
-    height: 88vh;
-}
-
-.alamadre{
-    background-color: #ffffff;
-    align-items: center;
-    justify-content: space-around;
-    height:100px;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-}
-
-.linhazinha{
-    background-color: #454545;
-    display:inline-flex;
-    justify-content: space-around;
-    height:30px;
-    width: 1200px;
-    border-radius: 300px;
-    color: #454545;
-    margin-bottom: 3rem;
-}
-
-.guardatudo{
-    align-items: center;
-    background-color: #ffffff;
-    margin-top: 15px;
-    justify-items: center;
-    justify-content: center;
-    align-items: row;
-}
-
-.carrinho{
-    position: fixed;
-    width: 50%;
-    height: 0%;
-    left: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(248, 248, 248);
-    z-index: 5;
-    border: 2PX SOLID rgb(190, 190, 190);
+    height: 100vh;
 }
 
 .putz{
     display: none;
     position: fixed;
     z-index: 4;
-    width: 580px;
-    height: 160px;
+    width: 1000px;
+    height: 560px;
     align-items: center;
     justify-content: center;
-    top: 320px;
-    right: 500px;
-    background-color: #d6d6d6;
+    top: 120px;
+    right: 300px;
 }
 .putzConteudo{
     background-color: rgb(235, 234, 236);
     width: 560px;
-    height: 140px;
-    font-size: 30PX;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 560px;
+    font-size: 300PX;
 }
-.botao{
-    background-color: #c8815f;
-    color: white;
-    width: 50%;
-    height: 50%;
-}
+
 .xzinho{
     position: absolute;
-    right: 25px;
-    top: 15px;
+    right: 242px;
+    top: 18px;
     width: 31px;
     height: 30px;
     display: flex;
@@ -124,32 +73,23 @@ header{
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 900;
+    z-index: 1000;
     position: fixed;
     background: transparent;
     transition: all .35s ease;
-    background-color: #454545;
+    background-color: #fff;
     padding: 14px 14%;
-    color: #fff;
-       
 }
 
 .categoria{
     padding-top: 400px;
-    align-items: center;
-}
-
-.categoria h1{
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
-    font-family: Tahoma;
-    margin-bottom: 1rem;
-    height: 4rem;
-    background-color: #ececec;
 }
 
 a{
+    color: white;
+}
+
+a2{
     color: white;
 }
 
@@ -164,7 +104,7 @@ a{
 }
 
 .cabeçalho-link a{
-    color: #ffffff;
+    color: #111;
     font-weight: 700;
     transition: 0.3s;
 }
