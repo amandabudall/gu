@@ -8,27 +8,78 @@
     <title> Elf Store </title>
 </head>
    <body id="a">
+        <div class="carrinho" id="carrinho">
+            
 
+            
+            <!-- <div class="carrinhoItem">
+                <div class="produto">Skate</div>
+                <div class="carrinhoItemTabela">
+                    <div class="quad">PRODUTO</div>
+                    <div class="quad">PREÇO UNI.</div>
+                    <div class="quad">QUANTIDADE</div>
+                    <div class="quad">PREÇO TOTAL</div>
+                </div>
+                
+                <div class="tabela">
+                    <div class="quad st "> 
+                        <img src="shape.jpg" height="80%" alt=""></img>  
+                        
+                    </div>
+                    <div class="quad st b">R$ 199</div>
+                    <div class="quad st c" id="">
+                        <div class="mais" id="mais" onclick="mudarPreco(199)"> + </div>
+                            <div id="qtd"></div>
+                    </div>
+                    <div class="quad st d" id="total" ></div>
+                </div>
+                
+            </div> -->
 
-        <div class="putz" id="putz">
+            
+           
+            <!-- <div class="tabelaTotal">
+                
+                
+                <div class="tabelaMetade">TOTAL : </div>
+                <div class="tabelaMetade" id="total"></div>
+            </div> -->
+        </div>
+
+        <div class="putz" id="putz"> 
                  <div class="putzConteudo">
+                    <div class="botao" onclick="mandarCarrinho('Skate',199,'shape.jpg')">
+                        Adicionar ao carrinho.
+                    </div>
                  </div>
-             <div class="xzinho" onclick="fecharPutz()">
+             <div class="xzinho" onclick="fecharPutz('putz')">
                 <img src="x.png"> 
              </div>
         </div>
 
+        <div class="putz" id="putz2">
+            <div class="putzConteudo">
+                <div class="botao" onclick="mandarCarrinho('Guidão',150,'truck.jpg')">
+                    Adicionar ao carrinho.
+                </div>
+            </div>
+        <div class="xzinho" onclick="fecharPutz('putz2')">
+           <img src="x.png"> 
+          
+        </div>
+   </div>
+
 
     </body>
     <section class="videohome" >
-        <video autoplay loop muted height="910px">
+        <video autoplay loop muted height="854px" >
             <source src="Skates Traxart (1).mp4"  type="video/mp4"/>
         </video>
         <div class="Meio">
             <h1> NOVA LINHA </h1>
             <h1> MASCULINA </h1>
             <P> Novas cores, novos tamanhos e novas variedades </P>
-           <button> <a href="novo.html"> Nova Coleção </a> </button>
+           <button> <a href="novo/novo.html"> Nova Coleção </a> </button>
         </div>
     </section>
     
@@ -54,7 +105,7 @@
                     <a href="local/local.html" target="_self"> Localização </a>
                 </li>
             </div>
-            <div class="icon" onclick="window.location='carrinho.html';"><span><ion-icon name="bag-outline"></ion-icon></span>
+            <div class="icon" onclick="carrinho()"><span><ion-icon name="bag-outline"></ion-icon></span>
                 
             </div>
 
@@ -66,19 +117,40 @@
        
    
     <section class="categoria">
-        <h1> NOVOS PRODUTOS </h1>
-        <div class="Container-card-1">
-            <div class="cards" onclick="putz()">
-                <img src="shape.jpg">
-                <h1> R$399 </h1>
-            </div>
+      <div class="alamadre">
+        
+          <div class="linhazinha"> - </div>
+      </div>
+        <h1>  NOVOS PRODUTOS ⭐ </h1>
+<div class="guardatudo">
+    
 
 
-            <div class="cards" onclick="putz()">
+    <div class="Container-card-1">
+      
+             
+                <div class="cards" onclick="putz('putz')">
+                    <img src="shape.jpg">                        
+                            <h1>R$399</h1>                       
+                </div>
+             
+             
+                
+            <div class="cards" onclick="putz('putz2')">
                 <img src="truck.jpg">
-                <h1> R$150 </h1>
+                <div class="preco">
+                <h1>R150</h1>
+                </div>
             </div>
         </div>
+                </div>  
+        </div>
+    </div>
+
+
+
+
+
 
         <div class="Container-card-1">
             <div class="cards" onclick="putz()">
@@ -92,6 +164,11 @@
             </div>
         </div>
 
+
+
+
+
+
         <div class="Container-card-1">
             <div class="cards" onclick="putz()">
                 <img src="rolamento.jpg">
@@ -100,17 +177,16 @@
 
             <div class="cards" onclick="putz()">
                 <img src="parafuso.jpg">
-                <h1> R$30 </h1>
-
-                
+                <h1> R$30 </h1>  
             </div>
-        </div>
+         </div>
+ 
+
+</div>
     </section>
 
       <section>
-        <div class="putzConteudo">
-            aaa
-        </div>
+        
         <h1> ESTOQUE NOVOS </h1>
         <div class="Container-roupas">
             <div class="roupa" onclick="putz()">
