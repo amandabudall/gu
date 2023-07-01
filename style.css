@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -77,6 +78,60 @@
     background-color: rgb(248, 248, 248);
     z-index: 5;
     border: 2PX SOLID rgb(190, 190, 190);
+}
+
+.profile-dropdown{
+    position: relative;
+    width: fit-content;
+}
+.profile-dropdown-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    transform: box-shadow .2s,background-color 0.2s;
+}
+.profile-dropdown-btn:hover{
+    background-color: #555;
+    box-shadow: #111;
+}
+.profile-dropdown-list{
+    display:relative;
+    top: 69px;
+    width: 220px;
+    right: 0;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: #7d7d7d;
+}
+
+.profile-img{
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: url(https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg);
+    background-size: cover;
+}
+
+.profile-img i{
+    position: absolute;
+    right: 0.2rem;
+    bottom: 0.3rem;
+    font-size: 0.5rem;
+    color: rgb(158, 213, 62);
+   
+}
+
+.profile-dropdown-btn span{
+    margin:  0 0.5rem;
+    margin-right: 0;
 }
 
 .putz{
